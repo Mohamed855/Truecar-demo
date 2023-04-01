@@ -1,0 +1,456 @@
+﻿/*Fonts*/
+
+@font-face
+    {
+        font-family: title;
+        src: url(../fonts/Ubuntu-Medium.ttf);
+    }  
+@font-face
+    {
+        font-family: nav;
+        src: url(../fonts/OpenSans-Regular.ttf);
+    }
+@font-face
+    {
+        font-family: small-title;
+        src: url(../fonts/OpenSans-Bold.ttf);
+    }
+@font-face
+    {
+        font-family: paragraph;
+        src: url(../fonts/Poppins-Medium.ttf);
+    }
+@font-face
+    {
+        font-family: Ubuntu;
+        src: url(../fonts/Ubuntu-Medium.ttf);
+    }
+/*end*/
+
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+
+/*nav bar*/
+
+nav {
+    position: fixed;
+    width: 99.8%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 1.5px 3px rgba(0,0,0,0.5);
+    z-index: 1030;
+}
+.logo {
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 40px;
+    position: absolute;
+}
+nav ul {
+    position: relative;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+    color: #F5F5F5;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 15.5px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li:hover {
+    color: #1492E6;
+}
+.account_control {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.account_control:hover {
+    color: #1492E6;
+}
+nav ul ul {
+    display: none;
+    padding: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+nav ul li a:hover {
+    color: #1492E6;
+}
+nav ul li a , nav ul li ul a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li ul a:hover {
+    color: #1492E6;
+}
+nav ul ul ul {
+    position: absolute;
+    margin-left: 100px;
+    top: 0px;
+}
+/*end*/
+
+/*header*/
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.container .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 30s linear infinite;
+}
+.container .slider .slide {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.half-black-bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+.container .slider .slide1 {
+    background-image: url(../backgrounds/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide2 {
+    background-image: url(../backgrounds/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide3 {
+    background-image: url(../backgrounds/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide4 {
+    background-image: url(../backgrounds/img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.newdiv {
+    position: relative;
+    width: 100%;
+    color: #F5F5F5;
+}
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,120%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.principal h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family: title;
+    text-shadow: 0 2.5px 4px rgba(0,0,0,0.8);
+}
+.principal h1 span {
+    font-size: 85px;
+    margin-bottom: 20px;
+    color: #37587E;
+}
+.principal p {
+    font-size: 20px;
+    text-shadow: 0 1.5px 3px rgba(0,0,0,0.8);
+}
+
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/*end*/
+
+/*about*/
+
+.about {
+    width: 85%;
+    text-align:justify;
+    margin-left: 7.5%;
+    height: 420px;
+    margin-top: 60px;
+    position: relative;
+}
+.img {
+    width: 400px;
+    height: 90px;
+    position: absolute;
+    display: inline;
+    top: 120px;
+    left: -1%;
+}
+.paragraph { 
+    width: 600px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    position: absolute;
+    right: -1%;
+    top: 55px;
+}
+
+/*end*/
+
+/*offers*/
+
+.caroffers {
+    width: 100%;
+    height: 100vh;
+    background-color: #FBFBFB;
+}
+.newestcar {
+    width: 31%;
+    height: 440px;
+    margin-left: 0.5%;
+    margin-top: 100px;
+    background-color: #FFFFFF;  
+    display: inline-block;
+    border-radius: 8px;
+}
+.oc {
+    width: 100%;
+    height: 60%;
+   
+    padding:.1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.oc:hover {
+    transition: 0.2s;
+    transform : scale(1.04);
+}
+del {
+    color:#cf2020;
+}
+/*end*/
+
+
+/*marks*/
+
+.marks-bg {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    background-color: #F9F9F9;
+    padding-top: 40px;
+}
+.marks {
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+}
+.marks-logos {
+    width: 125px;
+    height: 125px;
+    padding: 50px;
+}
+.marks-logos:hover {
+    transform : scale(1.1);
+}
+
+/*end*/
+
+
+/*sponsers*/
+
+.sponsers-bg {
+    width: 100%;
+    height: 650px;
+    background-color: #FEFEFE;
+    padding-top: 60px;
+}
+.title-s {
+    font-size: 30px;
+    color: rgba(0,0,0,0.7);
+    font-family: nav;
+}
+.paragraph-s {
+    width: 65%;
+    text-align: center;
+    font-size: 16px;
+    font-family: nav;
+}
+.sponsers {
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+}
+.sponsers-logos {
+    width: 150px;
+    height: 40px;
+    padding: 50px;
+}
+
+/*end*/
+
+/*Social media*/
+
+#face:hover {
+  color: #3B5998;
+}
+#google:hover {
+  color: #DC4E41;
+}
+#insta:hover {
+  color: #6C27B3;
+}
+#linked:hover {
+  color: #007AB9;
+}
+#skype:hover {
+  color: #00AAF2;
+}
+#twitter:hover {
+  color: #55ACEE;
+}
+#whats:hover {
+  color: #2CB742;
+}
+
+/*Footer style*/
+
+.footer-bg {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background-color: #444444;
+    padding-bottom: 70px;
+    position: relative;
+}
+.footer-row {
+    display: table-row;
+}
+.footer-cell {
+    display: table-cell;
+    width: 33%;
+	text-align: left;
+    position: relative;
+}
+.footer-title-1 {
+    font-family: small-title;
+    text-shadow: 0 1.5px 5px rgba(0.0.0.1);
+    font-size: 34px;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.footer-paragraph {
+    width: 300px;
+    font-size: 15px;
+    font-family: paragraph;
+    text-align: justify;
+    color: lightgray;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.loc {
+    padding-left: 70px;
+}
+.map {
+    width: 80%; 
+    height: 200px;
+    position: absolute;
+    top: 450px;
+    left: 10%;
+}
+.video {
+    background-color: #02374E;
+    width: 80%;
+}
+.truecar-video {
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    outline: none;
+}
+.footer-links {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+}
+.footer-logos {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+}
+.footer-logos a {
+    color: lightgray;
+    font-size: 22px;
+}
+.footer-title-2 {
+    font-family: small-title;
+    text-shadow: 0 1.5px 5px rgba(0.0.0.1);
+    font-size: 34px;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+.copyright {
+    font-family: Ubuntu;
+    font-size: 14px;
+    color: lightgray;
+    position: absolute;
+    top: 102%;
+    left: 17%;
+}
+
+/*end*/

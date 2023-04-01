@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #f5f5f5;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+}
+a:hover {
+	color: #3498db;
+}
+hr {
+	width: 95%;
+	float: right;
+}
+.content {
+	width: 50%;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	padding-bottom: 2%;
+	border: 1px solid #cbcbcb;
+	background-color: #fff;
+}
+.link {
+	font-family: sans-serif;
+	text-decoration: none; 
+	color: #3498db;
+}
+.link_container {
+	width: 80%;
+	padding: 3% 0 0 10%;
+}
+.brand {
+	width: 80%;
+	padding: 3% 0 0 5%;
+} 
+.brand-name {
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.models {
+	width: 75%;
+	margin-left: 10%;
+	padding-top: 2%;
+}
+.model-name {
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.btn {
+	float: right;
+	padding-left: 15px;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 5px 10px;
+	border: 1px solid #cbcbcb;
+	border-radius: 6px;
+	color: #f5f5f5;
+}
+.btn:hover {
+	color: #f5f5f5;
+}
+.edit {
+	background-color: #2A9865;
+	margin-right: 2%;
+}
+.edit:hover {
+	background-color: #1F744D;
+}
+.del {	
+	background-color: #DE0909;
+}
+.del:hover {
+	background-color: #C20202;
+}

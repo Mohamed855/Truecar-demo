@@ -1,0 +1,244 @@
+body {
+    background-color: #FFFFFF;
+}
+.car-header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.caroffers {
+    width: 100%;
+    height: auto;
+    padding: 0 0px 70px 0;
+    background-color: #F2F2F2;
+}
+.newestcar {
+    width: 31%;
+    height: 480px;
+    margin-left: 0.5%;
+    margin-top: 100px;
+}
+.aboutcar {
+    width: 85%;
+    text-align:justify;
+    margin-left: 7.5%;
+    height: 600px;
+    margin-top: 40px;
+    position: relative;
+}
+.oc {
+    width: 100%;
+    height: 60%;
+    transition 1s;
+    padding:.1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.oc:hover {
+    transition: 0.2s;
+    transform : scale(1.04);
+}
+.imgcar {
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    display: inline;
+    top: 80px;
+    left: 0%;
+}
+.rent-car{
+    background-color:#41B866;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    border:none;
+    color:aliceblue;
+    outline: none;
+}
+.rent-car:hover{
+    transition: .5s;
+    background-color: #066129;
+    cursor: pointer;
+}
+.rent-car:active{
+    transform: scale(.91);
+}
+.popup {
+    height: 450px;
+    width: 340px;
+    position: absolute;
+    overflow: hidden;
+    top:-60%;
+    right: 10%;
+    bottom: 85px;
+    left: 15%;
+    padding:20px 50px;
+    display: block;
+    transform: translateY(20px);
+    border-radius: 20px;
+    transition: all 0.5s;
+    visibility: hidden;
+}
+.popup_content {
+    opacity: 0;
+    
+}
+.popup:before {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #273238;
+    content: "";
+    bottom: 10px;
+    left: 50%;
+    top:95%;
+    border-radius: 50px;
+    border-radius: 50%;
+    transition: all 600ms;
+}
+.popup.active {
+    display: block;
+    visibility: visible;
+    transition: all 600ms;
+    transform:translateY(0px);
+    transition: all 0.5s;
+}
+.popup.active:before{
+    height: 2000px;
+    width: 2000px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -1000px;
+    margin-top: -1000px;
+    display: block;
+    transition: all 600ms;
+}
+.popup.active .popup_content {
+    position: relative;
+    z-index: 1;
+    opacity: .70;
+    transition: all 600ms;
+}
+.popup input{
+    width: 55%;
+    height: 20px;
+    background: none;
+    border: 0;
+    display: block; 
+    font-size: 15px;
+    border:none;
+    padding: 14px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 25px;
+    transition:0.25s;
+    color: rgba(100%,100%,100%,0.5);
+} 
+.popup input:focus{
+    width: 70%;
+    border-color: #25dede;
+}
+.popup form .button{
+    width: 35%;
+    height: 50px;
+    background: none;
+    border: 0;
+    display: block; 
+    font-size: 15px;
+    border:none;
+    padding: 14px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #25dede;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 25px;
+    color: rgba(100%,100%,100%,0.5);
+    transition: 0.25s;
+    cursor: pointer;
+}
+.popup form .button:focus {
+    width: 35%;
+    border-color: #1babab;
+}
+.popup form .button:hover{
+    transition: .25s;
+    background-color: #25dede;
+    cursor: pointer;
+    color: white;
+}
+.popup form .button:active{
+    transform: scale(.95);
+}
+.rent{
+    display: block;
+    transition: transform 0.25s;
+    text-decoration: none;
+    background-color:#41B866;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    border:none;
+    margin-top:30px;
+    color:aliceblue;
+    outline: none;
+    margin-left: 160px;
+}
+.rent:hover{
+    transition: .5s;
+    background-color: #066129;
+    cursor: pointer;
+}
+.rent:active{
+    transform: scale(.91);
+}
+.rent.active {
+    transition: transform 0.5s;
+    list-style: none;
+    text-decoration: none;
+}
+
+.buythiscar { 
+    width: 600px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+}
+.theprice{
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: title;
+    text-align: center;
+}
+.car-info{
+    width: 100%;
+    height: 450px;
+}
+.car-info p{
+    color: rgba(0,0,0,0.8);
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: justify;
+    width: 80%;
+}
+.car-info h2{
+    color: rgba(0,0,0,1);
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: justify;
+    width: 80%;
+}

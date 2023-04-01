@@ -1,0 +1,166 @@
+body {
+    font-size: 15px;
+    font-family: tahoma;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 400px;
+}
+.blog-post-section {
+    padding: 80px 0 20px;
+    overflow:hidden;
+}
+h2,h3 {
+    font-family: tahoma;
+}
+.blog-entry {
+    margin-bottom: 200px;
+    position: relative;
+}
+.blog-entry .entry-hover {
+    position: absolute;
+    margin: 25px;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+.blog-entry .entry-hover .hover-cover {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto -75px;
+    z-index: 2;
+    border-radius: 300px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.blog-entry:hover .entry-hover .hover-cover {
+    height: auto;
+    width: auto;
+    border-radius:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    margin: auto;
+}
+h3 {
+    color: black;
+}
+.blog-entry:hover .entry-data {
+    top: auto;
+    bottom: 0;
+    margin-bottom: 20px;
+
+}
+.blog-entry .entry-data {
+    position: absolute;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+    top:50%;
+    z-index:1;
+    font-size:17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    z-index: 3;
+    margin: -12px auto 0;
+    display: none;
+}
+.blog-entry .hover-info {
+    position: absolute;
+    top: 100%;
+    margin-top: -25px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 4;
+}
+.blog-entry:hover .hover-info {
+    top: 0;
+    margin-top: 25px;
+}
+.blog-entry .hover-info img {
+    border: 3px solid white;
+    border-radius:200px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 18px;
+}
+.blog-entry:hover .hover-info h2 a
+.blog-entry:hover .hover-info h2
+.blog-entry:hover .hover-info p {
+    color: black !important;
+}
+.blog-entry .hover-info p {
+    font-size: 13px;
+    font-size: italic;
+}
+.blog-entry .hover-info h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+.blog-entry .hover-info .hover-text,
+.blog-entry .hover-info .per {
+    display: none;
+    text-align:justify;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 10px;
+}
+
+.blog-entry:hover .hover-info .hover-text,
+.blog-entry:hover .hover-info .hover-author,
+.blog-entry:hover .hover-info .footer-logos {
+    display: block;
+}
+.designation.active, .real {
+    background:white !important;
+}
+.blog-entry .entry-hover .hover-cover,
+.blog-entry:hover .entry-hover .hover-cover,
+.blog-entry .hover-info,
+.blog-entry .entry-data {
+    transition: ease-in-out 0.4s;  
+}
+.col-md-4 {
+    margin-left: 13%;
+    display: inline-block;
+}
+/*Social media*/
+.footer-logos {
+    display: none;
+    padding-top: 25px;
+    font-size: 20px;
+}
+#face, #google, #insta, #twitter, #whats {
+    color:#666666;
+}
+#face:hover {
+    color: #4873CF;
+}
+#google:hover {
+    color: #DC4E41;
+}
+#insta:hover {
+    color: #6C27B3;
+}
+#twitter:hover {
+    color: #55ACEE;
+}
+#whats:hover {
+    color: #2CB742;
+}

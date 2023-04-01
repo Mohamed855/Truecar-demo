@@ -1,0 +1,34 @@
+/*Fonts*/
+
+@font-face
+    {
+        font-family: title;
+        src: url(../fonts/Ubuntu-Medium.ttf);
+    }  
+@font-face
+    {
+        font-family: nav;
+        src: url(../fonts/OpenSans-Regular.ttf);
+    }
+
+/*end*/
+
+.e-header {
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+}
+.Gallery{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Gallery img{
+    transition: 0.5s;
+    padding:.08%;
+    width: 24%;
+    height: 220px;
+}
+.Gallery img:hover{
+    transform : scale(1.03);    
+}
