@@ -4,10 +4,10 @@ session_start();
 
 if(isset($_SESSION['username'])==false)
 {
-    include('options/ignore_access.php');
+    include('../options/ignore_access.php');
 }
 
-include('options/update_pass.php');
+include('../options/update_pass.php');
 
 ?>
 
@@ -15,7 +15,7 @@ include('options/update_pass.php');
 <html>
     <head>
 
-        <link rel="stylesheet" type="text/css" href="styleCss/edit.css">
+        <link rel="stylesheet" type="text/css" href="../styleCss/edit.css">
         <title>TRUEcar -Edit password-</title>
         
     </head>

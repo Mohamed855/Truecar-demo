@@ -5,9 +5,9 @@
 
         <meta charset="utf-8">
 
-        <link rel="icon" type="image/png" href="images/truecar-sl.jpg">
-        <link rel="stylesheet" type="text/css" href="styleCss/about.css">
-        <link rel="stylesheet" type="text/css" href="styleCss/all.css">
+        <link rel="icon" type="image/png" href="../images/truecar-sl.jpg">
+        <link rel="stylesheet" type="text/css" href="../styleCss/about.css">
+        <link rel="stylesheet" type="text/css" href="../styleCss/all.css">
         <style>
             *{
                 margin: 0;
@@ -16,7 +16,7 @@
         </style>
     </head>
     
-    <body style="background-image:url(backgrounds/about-bg.jpg);width: 100%;height: 100%;">
+    <body style="background-image:url(../backgrounds/about-bg.jpg);width: 100%;height: 100%;">
          <br>
         <div class="blog-post-section">
             <div class="container">
@@ -24,7 +24,7 @@
                     <div class="col-md-4">
                         <div class="blog-entry">
                             <div class="entry-cover">
-                                <img src="images/1.jpg" alt="Mahmoud Khaleed">
+                                <img src="../images/1.jpg" alt="Mahmoud Khaleed">
                             </div>
                             <div class="entry-hover">
                                 <div class="hover-cover real"></div>
@@ -32,7 +32,7 @@
                                         Teem
                                     </h3>
                                 <div class="hover-info">
-                                    <img src="images/1.jpg" alt="Mahmoud Khaleed">
+                                    <img src="../images/1.jpg" alt="Mahmoud Khaleed">
                                     <h2>Mahmoud Khaleed</h2>
                                     <p class="designation" style="color:#13677B;padding-top: 10px;font-size: 16px;font-weight: bold;">INFO</p>
                                     <p class="hover-text" style="color: black;font-size: 15px;">From : El-Behera - Egypt</p>
@@ -58,7 +58,7 @@
                     <div class="col-md-4">
                         <div class="blog-entry">
                             <div class="entry-cover">
-                                <img src="images/2.jpg" alt="Mohammed Abdo">
+                                <img src="../images/2.jpg" alt="Mohammed Abdo">
                             </div>
                             <div class="entry-hover">
                                 <div class="hover-cover real"></div>
@@ -66,7 +66,7 @@
                                         Teem
                                     </h3>
                                 <div class="hover-info">
-                                    <img src="images/2.jpg" alt="Mohammed Abdo">
+                                    <img src="../images/2.jpg" alt="Mohammed Abdo">
                                     <h2>Mohammed Abdo</h2>
                                     <p class="designation" style="color:#13677B;padding-top: 10px;font-size: 16px;font-weight: bold;">Info</p>
                                     <p class="hover-text" style="color: black;font-size: 15px;">From : Alexandria - Egypt</p>

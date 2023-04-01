@@ -11,7 +11,7 @@
         </div>
         <div class="footer-cell" style="text-align: center;">
             <div class="video">
-            <video class="truecar-video" title="Trurcar Video" poster="images/truecar-classic-logo.png" preload="none" controls>
+            <video class="truecar-video" title="Trurcar Video" poster="../images/truecar-classic-logo.png" preload="none" controls>
            <source src="videos/TrueCar%20Trade_%20Removing%20Friction%20in%20the%20Trade-In%20P(720P_HD).mp4" type="video/mp4">
            </video>
             </div>
@@ -40,7 +40,7 @@
                 Santa Monica, CA 90401 <br>
                 1-800-200-2000
             </p>
-           <img class="map" src="images/footer-wmap.png">
+           <img class="map" src="../images/footer-wmap.png">
         </div>
     </div>
 </footer>

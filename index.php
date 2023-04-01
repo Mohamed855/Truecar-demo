@@ -9,7 +9,7 @@
     
     <script type="text/javascript">
     function delayedRedirect(){
-        window.location = "home.php"
+        window.location = "pages/home.php"
     }
 </script>
 

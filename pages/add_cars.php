@@ -6,15 +6,15 @@ if(isset($_SESSION['username']))
 {
 	if ($_SESSION['username'] != "admin") 
     {
-    	include('options/ignore_access.php');
+    	include('../options/ignore_access.php');
     }
 }
 else
 {
-    include('options/ignore_access.php');
+    include('../options/ignore_access.php');
 }
 
-include('options/add_cars.php');
+include('../options/add_cars.php');
 
 ?>
 <!DOCTYPE html>
@@ -23,9 +23,9 @@ include('options/add_cars.php');
 
 	<title>TRUEcar -Add cars-</title>
 
-	<link rel="icon" type="image/png" href="images/truecar-sl.jpg">
-	<link rel="stylesheet" type="text/css" href="styleCss/add_brands.css">
-	<link rel="stylesheet" type="text/css" href="styleCss/home.css">
+	<link rel="icon" type="image/png" href="../images/truecar-sl.jpg">
+	<link rel="stylesheet" type="text/css" href="../styleCss/add_brands.css">
+	<link rel="stylesheet" type="text/css" href="../styleCss/home.css">
 
 	<!--show selected option in hidden textbox-->
 

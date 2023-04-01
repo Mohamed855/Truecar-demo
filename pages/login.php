@@ -4,10 +4,10 @@ session_start();
 
 if(isset($_SESSION['username'])) 
 {
-    include('options/ignore_access.php');
+    include('../options/ignore_access.php');
 }
 
-include('options/login.php');
+include('../options/login.php');
 
 ?>
 
@@ -17,8 +17,8 @@ include('options/login.php');
 
         <title>TRUEcar -Login-</title>
 
-        <link rel="icon" type="image/png" href="images/truecar-sl.jpg">
-        <link rel="stylesheet" type="text/css" href="styleCss/login.css">
+        <link rel="icon" type="image/png" href="../images/truecar-sl.jpg">
+        <link rel="stylesheet" type="text/css" href="../styleCss/login.css">
 
     </head>
 
@@ -27,7 +27,7 @@ include('options/login.php');
         <form class="box login" action="login.php" method="POST">
 
         	<!--form logo-->
-            <img src="images/TRUECAR.png" width="300px" height="113px">
+            <img src="../images/TRUECAR.png" width="300px" height="113px">
 
             <!--form content-->
             <input type="text" placeholder="Username" name="username" maxlength="20" required>

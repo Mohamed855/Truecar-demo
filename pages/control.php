@@ -6,15 +6,15 @@ if(isset($_SESSION['username']))
 {
 	if ($_SESSION['username'] != "admin") 
     {
-    	include('options/ignore_access.php');
+    	include('../options/ignore_access.php');
     }
 }
 else
 {
-    include('options/ignore_access.php');
+    include('../options/ignore_access.php');
 }
 
-include('options/control.php');
+include('../options/control.php');
 
 ?>
 <!DOCTYPE html>
@@ -54,8 +54,8 @@ include('options/control.php');
 		
 			<li class="brand"> 
 				<ul>
-					<a href="brands/<?php echo $row_brands['name'];?>page.php" class="brand-name"><?php echo $row_brands['name'];?></a> 
-					<a href='options/control.php?del_b=<?php echo $row_brands['id'];?>' class="btn del">delete</a>
+					<a href="../brands/<?php echo $row_brands['name'];?>page.php" class="brand-name"><?php echo $row_brands['name'];?></a> 
+					<a href='../options/control.php?del_b=<?php echo $row_brands['id'];?>' class="btn del">delete</a>
 				</ul>
 				<hr>
 
@@ -70,7 +70,7 @@ include('options/control.php');
 
 					<li class="models">
 						<ul>
-							<a href="models/<?php echo $brand_name.'-'.$row_models['carname'];?>.php" class="model-name"><?php echo $row_models['carname'];?></a>
+							<a href="../models/<?php echo $brand_name.'-'.$row_models['carname'];?>.php" class="model-name"><?php echo $row_models['carname'];?></a>
 							<a href='control.php?del_m=<?php echo $row_models['id'];?>' class="btn del">delete</a>
 							<a href='' class="btn edit">Edit</a>
 						</ul>
@@ -93,13 +93,13 @@ include('options/control.php');
 
 						// delete car folder
 
-						array_map('unlink', glob("models/".$brand_name."-".$model."/*.*"));
+						array_map('unlink', glob("../models/".$brand_name."-".$model."/*.*"));
 
-						rmdir("models/".$brand_name."-".$model);
+						rmdir("../models/".$brand_name."-".$model);
 						
 						// file path
 
-						$file = "models/".$brand_name."-".$model.".php";
+						$file = "../models/".$brand_name."-".$model.".php";
 
 						// delete file
 
@@ -111,7 +111,7 @@ include('options/control.php');
 
 						// reload same page
 
-						include('options/ignore_access.php');
+						include('../options/ignore_access.php');
 					}
 
 					?>
